@@ -1,7 +1,7 @@
 .grid {
   display: flex;
-  height: 70vw;
-  width: 70vw;
+  height: 50vw;
+  width: 50vw;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -26,16 +26,31 @@
 }
 
 .grid__overlay__score {
-  font-size: 4vw;
+  font-size: 2vw;
   list-style: none !important;
   text-align: justify;
+  width: 46vw;
+  text-align: left;
+  padding: 20px 0px;
+  background: rgba(95, 158, 159, 0.66)
+}
+
+.grid__overlay__score th {
+  font-size: 1.3em;
+}
+
+.grid__overlay__score td {
+  font-size: 0.9em;
+}
+
+.grid__overlay__msg {
+  font-size: 14vw;
 }
 
 .grid__overlay__play-again {
-  position: absolute;
   bottom: 59px;
   right: 45%;
-  font-size: 17vw;
+  font-size: 11vw;
   text-shadow: 2px 2px 5px;
   color: #104c4e;
   cursor: pointer;
@@ -43,8 +58,8 @@
 
 .grid__space {
   cursor: pointer;
-  width: 17vw;
-  height: 17vw;
+  width: 12vw;
+  height: 12vw;
   background-color: white;
   border-radius: 10px;
   margin: 5px;
@@ -52,7 +67,7 @@
   color: cadetblue;
   justify-content: center;
   align-items: center;
-  font-size: 17vw;
+  font-size: 11vw;
   font-family: 'Montserrat', sans-serif;
   text-shadow: 2px 2px 7px rgba(55, 55, 55, 0.75);
 }

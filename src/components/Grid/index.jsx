@@ -19,12 +19,19 @@ const Grid = ({addToken, board, checkWinCondition, leaderboard, gameEnded, nextT
     <div className="grid">
       {gameEnded &&
         <div className="grid__overlay">
-          {gameEnded}
-          <ul className="grid__overlay__score">
-            {playersArr.map(p =>
-              <li>{p.name} - {p.score}</li>
-            )}
-          </ul>
+          <p  className="grid__overlay_msg">{gameEnded}</p>
+          <table className="grid__overlay__score">
+            <tr>
+              <th>Leaderboard</th>
+              <th>Score</th>
+            </tr>
+              {playersArr.map(p =>
+                <tr>
+                  <td>{p.name}</td>
+                  <td>{p.score}</td>
+                </tr>
+              )}
+          </table>
           <div
             onClick={tryAgain}
             className="grid__overlay__play-again"

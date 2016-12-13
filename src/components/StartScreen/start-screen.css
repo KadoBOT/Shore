@@ -11,19 +11,18 @@
 .start-screen__title {
   font-size: 15vw;
   color: #125254;
-  margin-bottom: 140px;
 }
 
 .start-screen__vs {
   font-size: 7vw;
-  margin: 40px 0px;
+  margin: 20px 0px -20px 0px;
   color: floralwhite;
 }
 
 .start-screen__play {
   cursor: pointer;
   font-size: 7vw;
-  margin: 40px 0px;
+  margin: 20px 0px 0px;
   color: floralwhite;
   background: #125254;
   padding: 10px 1em;
