@@ -10,10 +10,9 @@ const Grid = ({addToken, board, checkWinCondition, leaderboard, gameEnded, nextT
   const tryAgain = () => playAgain()
   const diff = (a, b) => b.score - a.score
   const playersArr = R.sort(diff, players.map(p => ({
-    name: p, score: leaderboard[p]
+    name: p,
+    score: leaderboard[p]
   })))
-
-  console.log(playersArr)
 
   return(
     <div className="grid">
